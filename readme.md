@@ -1,23 +1,23 @@
-# Nano-Base32
+# Btco-Base32
 
 A small, quick, self-contained implementation of the Base32 encoding/decoding scheme used by the cryptocurrency Nano.
 
 ## Installation
 
 ```sh
-$ yarn add nano-base32
+$ yarn add btco-base32
 ```
 
 or
 
 ```sh
-$ npm install --save nano-base32
+$ npm install --save btco-base32
 ```
 
 ## Usage
 
 ```js
-const nanoBase32 = require('nano-base32')
+const nanoBase32 = require('btco-base32')
 const hexToArrayBuffer = require('hex-to-array-buffer')
 const arrayBufferToHex = require('array-buffer-to-hex')
 const blake = require('blakejs')
@@ -49,7 +49,7 @@ const decodedChecksum = nanoBase32.decode(checksumEncoded)
 ```javascript
 /**
  * Decodes a Nano-implementation Base32 encoded string into a Uint8Array
- * @param {string} input A Nano-Base32 encoded string
+ * @param {string} input A Btco-Base32 encoded string
  * @returns {Uint8Array}
  */
  function decode (input)
@@ -64,8 +64,8 @@ function encode (view)
 
  ## Running Tests
  ```
- $ git clone https://github.com/termhn/nano-base32
- $ cd nano-base32
+ $ git clone https://github.com/bitcoinnanolabs/btco-base32
+ $ cd btco-base32
  $ yarn install
  $ yarn test
  ```
